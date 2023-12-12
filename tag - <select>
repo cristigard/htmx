@@ -1,0 +1,11 @@
+#sent get request from select tag
+<select id="filter-id" 
+    name="filter" 
+    hx-get="{% url 'get_content' %}" 
+    hx-trigger="change" 
+    hx-target="#search-results"
+    hx-vals="{'selectedOption': document.getElementById('filter-id').value}">
+      <option >Plan A</option>
+      <option >Plan B</option>
+      <option >Plan C</option>
+</select>
