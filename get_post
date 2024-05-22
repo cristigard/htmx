@@ -1,0 +1,6 @@
+#include hidden input
+<div hx-post="" hx-target="#content" hx-swap="outerHTML" hx-include="[name='form_in_out']">
+    {{ form.as_p }}
+    <button class="btn btn-primary btn-sm" hx-trigger="click">Filtreaza</button>
+    <input type="hidden" name="form_in_out" value="100">
+</div>
