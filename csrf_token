@@ -1,0 +1,8 @@
+1.For all forms and pages
+<body hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+
+2. Or for specific form
+<div hx-post="" hx-target="#content" hx-swap="outerHTML" hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+    {{ form.as_p }}
+    <button class="btn btn-primary btn-sm" hx-trigger="click">Filtreaza</button>
+</div>
